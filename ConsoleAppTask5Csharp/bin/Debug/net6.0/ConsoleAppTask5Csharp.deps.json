@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ConsoleAppTask5Csharp/1.0.0": {
+        "runtime": {
+          "ConsoleAppTask5Csharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleAppTask5Csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

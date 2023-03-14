@@ -4,20 +4,27 @@
     {
         static void Main(string[] args)
         {
-            int num, numDigit;
-            string strNum;
-        L1:
-            Console.Write("6 reqemli ededi daxil edin: ");
-            strNum = Console.ReadLine();
-            if (!int.TryParse(strNum, out num))
+            #region Task1
+            /* 1) 1-1000 qeder ededlerin cemi 7 bolunurmu?
+             */
+
+            int sum = 0;
+            for (int i = 1; i <= 1000; i++)
             {
-                goto L1;
+                sum += i;
             }
-            numDigit = (int)Math.Log10(num) + 1;
-            if (numDigit > 8)
+            Console.WriteLine(sum);
+            if (sum % 7 == 0)
             {
-                goto L1;
+                Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunur");
             }
+            else
+            {
+                Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunmur");
+            }
+            #endregion
+
+
         }
     }
 }
