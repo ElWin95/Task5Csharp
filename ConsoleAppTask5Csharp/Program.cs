@@ -77,8 +77,66 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
+            #region Task6
+            #region Task6.1
+            /* 6)  1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                        hem ozu cut eded olsun,        
+                        hem reqemleri cemi tek eded olsun,
+                        hem I reqemi tek eded olsun
+             */
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    int firstDigit = i / 100;
+            //    int sumOfDigits = (i / 100) + ((i / 10) % 10) + (i % 10);
 
+            //    if (i % 2 == 0 && sumOfDigits % 2 != 0 && firstDigit % 2 != 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region Task6.2
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    int sumOfDigits = 0;
+            //    int num = i;
+            //    while (num > 0)
+            //    {
+            //        sumOfDigits += num % 10;
+            //        num /= 10;
+            //    }
+            //    int firstDigit = i / 100;
+            //    if (i % 2 == 0 && sumOfDigits % 2 != 0 && firstDigit % 2 != 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #endregion
+            #region Task7
+            /* 7)  1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                    hemin ededin daxilinde 3 reqemi umumiyyetle olmasin
+             */
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    bool hasThree = false;
+            //    int num = i;
+            //    while (num > 0)
+            //    {
+            //        if (num % 10 == 3)
+            //        {
+            //            hasThree = true;
+            //            break;
+            //        }
+            //        num /= 10;
+            //    }
 
+            //    if (!hasThree)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
         }
     }
 }
