@@ -6,40 +6,40 @@ namespace ConsoleAppTask5Csharp
     {
         static void Main(string[] args)
         {
-        #region Task1
-        /* 1) 1-1000 qeder ededlerin cemi 7 bolunurmu?
-         */
+            #region Task1
+            /* 1) 1-1000 qeder ededlerin cemi 7 bolunurmu?
+             */
 
-        //int sum = 0;
-        //for (int i = 1; i <= 1000; i++)
-        //{
-        //    sum += i;
-        //}
-        //if (sum % 7 == 0)
-        //{
-        //    Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunur");
-        //}
-        //else
-        //{
-        //    Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunmur");
-        //}
-        #endregion
-        #region Task2
-        /* 2) 1-1000 qeder ededlerin icerisinde hem 7-e, hemde 8-e bolunenlerin siyahisi
-         */
+            //int sum = 0;
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    sum += i;
+            //}
+            //if (sum % 7 == 0)
+            //{
+            //    Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunur");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("1-1000 qeder ededlerin cemi 7-e bolunmur");
+            //}
+            #endregion
+            #region Task2
+            /* 2) 1-1000 qeder ededlerin icerisinde hem 7-e, hemde 8-e bolunenlerin siyahisi
+             */
 
-        //for (int i = 1; i <= 1000; i++)
-        //{
-        //    if (i % 7 == 0 && i % 8 == 0)
-        //    {
-        //        Console.WriteLine(i);
-        //    }
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    if (i % 7 == 0 && i % 8 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
 
-        //}
-        #endregion
-        #region Task3
-        /* 3) 1-1000 qeder ederlerin icerisinden  ele ededleri cap et ki, reqemleri cemi 3-e bolunsun
-         */
+            //}
+            #endregion
+            #region Task3
+            /* 3) 1-1000 qeder ederlerin icerisinden  ele ededleri cap et ki, reqemleri cemi 3-e bolunsun
+             */
             //for (int i = 1; i <= 1000; i++)
             //{
             ////Qeyd: eger eded 3 - e bolunurse, ededin reqemleri cemi de 3 - e bolunur.
@@ -49,7 +49,7 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
-        #region Task4
+            #region Task4
             /* 4) 1-1000 qeder ederlerin icerisinden ele ededleri cap etki reqemleri cemi 3 e bolunsun ve sonuncu reqem 3 olmasin.
              */
             //for (int i = 1; i <= 1000; i++)
@@ -60,7 +60,7 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
-        #region Task5
+            #region Task5
             /* 5)  1-1000 qeder ededlerin icerisinden  ele ededleri cap etki : hem reqemleri cemi 5-e bolunsun, hem de ozu 5-e bolunsun
              */
             //int sum = 0;
@@ -78,7 +78,7 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
-        #region Task6
+            #region Task6
             #region Task6.1
             /* 6)  1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
                         hem ozu cut eded olsun,        
@@ -114,7 +114,7 @@ namespace ConsoleAppTask5Csharp
             //}
             #endregion
             #endregion
-        #region Task7
+            #region Task7
             /* 7)  1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
                     hemin ededin daxilinde 3 reqemi umumiyyetle olmasin
              */
@@ -138,7 +138,7 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
-        #region Task8
+            #region Task8
             /* 8)  1-1000 qeder ederlerin icerisinden, daxilinde 3 reqemi olmayib, reqemleri cemi 3 olan en sonuncu eded hansidir?
              */
             //int max = 0;
@@ -174,6 +174,33 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             //Console.WriteLine($"Netice: {max}");
+            #endregion
+            #region Task9
+            /* 9)  1-1000 qeder ederlerin icerisinde 11-e bolunub reqemleri cemi 11-den boyuk olan 11-ci eded hansidir?
+
+             */
+            //int num;
+            //int sumOfDigits = 0;
+            //int count = 0;
+            //for (int i = 11; i <= 1000; i += 11)
+            //{
+            //   num = i;
+            //   while (num > 0)
+            //   {
+            //      sumOfDigits += num % 10;
+            //      num /= 10;
+            //   }
+            //   if (sumOfDigits > 11)
+            //   {
+            //       count++;
+            //       if (count == 11)
+            //       {
+            //           Console.WriteLine(i);
+            //           break;
+            //       }
+            //   }
+            //    sumOfDigits = 0;
+            //}
             #endregion
         }
     }
