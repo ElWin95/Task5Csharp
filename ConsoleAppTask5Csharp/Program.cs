@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleAppTask5Csharp
 {
@@ -201,6 +202,137 @@ namespace ConsoleAppTask5Csharp
             //   }
             //    sumOfDigits = 0;
             //}
+            #endregion
+            #region Task10
+            /* 10) 1-1000 qeder CUT ederlerin icerisinde reqemleri cemi 5 ile 7 arasinda olan en boyuk eded hansidir?
+             */
+
+            //int num, sumOfDigits;
+            //int max = 0;
+            //for (int i = 1; i <= 1000; i ++)
+            //{
+            //    sumOfDigits = 0;
+            //    if (i % 2 == 0)
+            //    {
+            //        num = i;
+            //        while (num > 0)
+            //        {
+            //            sumOfDigits += num % 10;
+            //            num /= 10;
+            //        }
+            //        if (sumOfDigits > 5 && sumOfDigits < 7)
+            //        {
+            //            if (i > max)
+            //            {
+            //                max = i;
+            //            }
+            //        }
+            //    }
+
+            //}
+            //Console.WriteLine(max);
+            #endregion
+            #region Task11
+            /* 11) 1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                     hem polindrom olsun,
+                     hem ededin reqemleri daxilinde 3 olmasin
+                     hem ededin reqemleri cemi 10 dan boyuk olsun
+             */
+
+            //int sum, digit, temp, digitSum;
+
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    l1:
+            //    sum = 0;
+            //    digitSum = 0;
+            //    temp = i;
+            //    while (temp > 0)
+            //    {
+            //        digit = temp % 10;
+            //        if (digit == 3)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+            //        digitSum += digit;
+            //        sum = sum * 10 + digit;
+            //        temp /= 10;
+            //    }
+            //    if (i == sum && digitSum > 10)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region Task12
+            #region Task12.1
+            /* 12) 1-100000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                    hem butun reqemleri eyni olsun,
+                    hem reqemleri cemi 5 den boyuk olsun
+                    hem reqemleri arasinda 5 reqemi olmasin    
+             */
+
+            int sum, digit, temp, temp2, digitSum, lastDigit;
+
+            //for (int i = 1; i <= 100; i++)
+            //{
+            int i = 1111;
+                bool allDigitsEquals = true;
+                
+                lastDigit = i % 10;
+                i /= 10;
+                while (i > 0)
+                {
+                    if (i % 10 != lastDigit)
+                    {
+                        allDigitsEquals= false;
+                        break;
+                    }
+                    i /= 10;
+                }
+                Console.WriteLine(i);
+            //l1:
+            //    sum = 0;
+            //    digitSum = 0;
+            //    temp = i;
+            //    while (temp > 0)
+            //    {
+            //        digit = temp % 10;
+            //        if (digit == 5)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+            //        digitSum += digit;
+            //        sum = sum * 10 + digit;
+            //        temp /= 10;
+            //    }
+            //    if (i == sum && digitSum > 5)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region Task12.2
+            //for (int i = 1; i <= 100000; i++)
+            //{
+            //    // Ədədin bütün rəqəmləri eyni olsun şərtini yoxlayırıq
+            //    bool allSameDigits = i.ToString().Distinct().Count() == 1;
+
+            //    // Ədədin rəqəmləri cəmi 5-dən böyük olsun şərtini yoxlayırıq
+            //    bool sumOfDigitsGreaterThan5 = i.ToString().Sum(digit => int.Parse(digit.ToString())) > 5;
+
+            //    // Ədədin rəqəmləri arasında 5 rəqəmi olmasın şərtini yoxlayırıq
+            //    bool doesNotContainDigit5 = !i.ToString().Contains("5");
+
+            //    // Bütün şərtləri yoxlayırıq və uyğun ədədləri çap edirik
+            //    if (allSameDigits && sumOfDigitsGreaterThan5 && doesNotContainDigit5)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
             #endregion
         }
     }
