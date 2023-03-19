@@ -272,43 +272,36 @@ namespace ConsoleAppTask5Csharp
                     hem reqemleri cemi 5 den boyuk olsun
                     hem reqemleri arasinda 5 reqemi olmasin    
              */
-
-            int sum, digit, temp, temp2, digitSum, lastDigit;
-
-            //for (int i = 1; i <= 100; i++)
+            //int temp1, temp2, digitSum, digit1, digit2;
+            //for (int i = 1; i <= 100000; i++)
             //{
-            int i = 1111;
-                bool allDigitsEquals = true;
-                
-                lastDigit = i % 10;
-                i /= 10;
-                while (i > 0)
-                {
-                    if (i % 10 != lastDigit)
-                    {
-                        allDigitsEquals= false;
-                        break;
-                    }
-                    i /= 10;
-                }
-                Console.WriteLine(i);
-            //l1:
-            //    sum = 0;
-            //    digitSum = 0;
-            //    temp = i;
-            //    while (temp > 0)
+            //    bool allDigitsSame = true;
+            //    temp1 = i;
+            //    int lastDigit = temp1 % 10;
+            //    while (temp1 > 0)
             //    {
-            //        digit = temp % 10;
-            //        if (digit == 5)
+            //          digit1 = temp1 % 10;
+            //        if (digit1 != lastDigit)
+            //        {
+            //            allDigitsSame = false;
+            //        }
+            //        temp1 /= 10;
+            //    }
+            //l1:
+            //    digitSum = 0;
+            //    temp2 = i;
+            //    while (temp2 > 0)
+            //    {
+            //        digit2 = temp2 % 10;
+            //        if (digit2 == 5)
             //        {
             //            i++;
             //            goto l1;
             //        }
-            //        digitSum += digit;
-            //        sum = sum * 10 + digit;
-            //        temp /= 10;
+            //        digitSum += digit2;
+            //        temp2 /= 10;
             //    }
-            //    if (i == sum && digitSum > 5)
+            //    if (allDigitsSame && digitSum > 5)
             //    {
             //        Console.WriteLine(i);
             //    }
@@ -333,7 +326,100 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
+            #region Task12.3
+            //    for (int i = 1; i <= 100000; i++)
+            //    {
+            //        if (AllDigitsSame(i) && SumOfDigitsGreaterThan5(i) && NoDigitIs5(i))
+            //        {
+            //            Console.WriteLine(i);
+            //        }
+            //    }
+            //}
+
+            //static bool AllDigitsSame(int n)
+            //{
+            //    int lastDigit = n % 10;
+            //    while (n > 0)
+            //    {
+            //        int digit = n % 10;
+            //        if (digit != lastDigit)
+            //        {
+            //            return false;
+            //        }
+            //        n /= 10;
+            //    }
+            //    return true;
+            //}
+
+            //static bool SumOfDigitsGreaterThan5(int n)
+            //{
+            //    int sum = 0;
+            //    while (n > 0)
+            //    {
+            //        sum += n % 10;
+            //        n /= 10;
+            //    }
+            //    return sum > 5;
+            //}
+
+            //static bool NoDigitIs5(int n)
+            //{
+            //    while (n > 0)
+            //    {
+            //        int digit = n % 10;
+            //        if (digit == 5)
+            //        {
+            //            return false;
+            //        }
+            //        n /= 10;
+            //    }
+            //    return true;
             #endregion
+            #endregion
+            #region Task13
+            /* 13) 1-100000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                    hem butun reqemleri yalniz tek ededlerden ibaret olsun,
+                    polindrom olsun,
+                    daxilinde minimum 1 dene 5 reqemi olsun
+             */
+            //int sum, digit1, digit2, temp1, temp2, digitSum;
+            //for (int i = 1; i <= 100000; i++)
+            //{
+            //l1:
+            //    sum = 0;
+            //    digitSum = 0;
+            //    temp2 = i;
+            //    while (temp2 > 0)
+            //    {
+            //        digit2 = temp2 % 10;
+            //        if (digit2 % 2 == 0)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+            //        digitSum += digit2;
+            //        sum = sum * 10 + digit2;
+            //        temp2 /= 10;
+            //    }
+            //    temp1 = i;
+            //    bool hasFive = false;
+            //    while (temp1 > 0)
+            //    {
+            //        digit1 = temp1 % 10;
+            //        if (digit1 == 5)
+            //        {
+            //            hasFive = true;
+            //            break;
+            //        }
+            //        temp1 /= 10;
+            //    }
+            //    if (i == sum && hasFive)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+
         }
     }
 }
