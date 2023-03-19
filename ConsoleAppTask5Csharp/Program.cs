@@ -419,7 +419,112 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
+            #region Task14
+            /* 14) 1-100000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                    hem ededin ozunun daxilinde minimum 2 dene 5 olsun,
+                    hem ededin ozunun daxilinde 2 dene yanashi gelen 1 reqemi olsun
+                    hem ededin reqemleri cemi 7- 15 arasinda olsun.
+                    hem ededin reqemlerinin daxilinde 6 reqemi olmasin
+             */
 
+            //int digit1, digit2, digit3, temp1, temp2, temp3, digitSum, counter;
+            //bool twoFive, twoOne;
+            //for (int i = 1; i <= 100000; i++)
+            //{
+            //    counter = 0;
+            //    twoFive = false;
+            //    temp1 = i;
+            //    while (temp1 > 0)
+            //    {
+            //        digit1 = temp1 % 10;
+            //        if (digit1 == 5)
+            //        {
+            //            counter++;
+            //            if (counter >= 2)
+            //            {
+            //                twoFive = true;
+            //            }
+            //        }
+            //        temp1 /= 10;
+            //    }
+            //    temp2= i;
+            //    twoOne= false;
+            //    while (temp2 > 0)
+            //    {
+            //        digit2 = temp2 % 100;
+            //        temp2 /= 10;
+            //        if (digit2 == 11)
+            //        {
+            //            twoOne = true;
+            //        }
+            //    }
+            //l1:
+            //    digitSum = 0;
+            //    temp3 = i;
+            //    while (temp3 > 0)
+            //    {
+            //        digit3 = temp3 % 10;
+            //        if (digit3 == 6)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+            //        digitSum += digit3;
+            //        temp3 /= 10;
+            //    }
+            //    if (digitSum > 7 && digitSum < 15 && twoFive & twoOne)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            #endregion
+            #region Task15
+            /* 15)* 1-10000 qeder ederlerin icerisinden  ele ededleri cap etki :
+                    hem sade eded olsun
+                    hem ededin ozunun daxilinde 0,1,5,7,9 reqemleri olmasin
+                    hem ededin reqemleri ceminde 2 reqemi olmasin
+             */
+
+            //int temp, digit, sum;
+            //int[] exclude = { 0, 1, 5, 7, 9 };
+
+            //for (int i = 1; i < 10000; i++)
+            //{
+            //l1:
+            //    sum = 0;
+            //    if (i % 2 == 0 || (i % 3 == 0 && i != 3) || i % 5 == 0 || i % 7 == 0)
+            //    {
+            //        continue;
+            //    }
+
+            //    temp = i;
+            //    while (temp > 0)
+            //    {
+            //        digit = temp % 10;
+
+            //        if (Array.IndexOf(exclude, digit) != -1)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+
+            //        sum += digit;
+            //        temp /= 10;
+            //    }
+
+            //    while (sum > 0)
+            //    {
+            //        digit = sum % 10;
+            //        if (digit == 2)
+            //        {
+            //            i++;
+            //            goto l1;
+            //        }
+            //        sum /= 10;
+            //    }
+            //    Console.WriteLine(i);
+            //}
+            #endregion
         }
     }
 }
