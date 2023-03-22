@@ -114,6 +114,36 @@ namespace ConsoleAppTask5Csharp
             //    }
             //}
             #endregion
+            #region Task6.3
+            /* 1-1000 qədər ədədlərin içərisindən  elə ədədləri çap etki :
+                 həm özü cüt ədəd olsun,
+                 həm rəqəmləri cəmi tək ədəd olsun,
+                 həm 1-ci rəqəmi tək ədəd olsun. */
+            //int sum, num1, num2, numDigit, firstNum;
+            //for (int i = 1; i <= 1000; i++)
+            //{
+            //    num1 = i;
+            //    if (num1 % 2 == 0) 
+            //    {
+            //        num2 = i; 
+            //        sum = 0;
+            //        while (num2 > 0)
+            //        {
+            //            sum += num2 % 10; 
+            //            num2 /= 10;
+            //        }
+            //        if (sum % 2 == 1)
+            //        {
+            //            numDigit = (int)Math.Log10(i);
+            //            firstNum = i / (int)Math.Pow(10, numDigit);
+            //            if (firstNum % 2 == 1)
+            //            {
+            //                Console.WriteLine(i);
+            //            }
+            //        }
+            //    }
+            //}
+            #endregion
             #endregion
             #region Task7
             /* 7)  1-1000 qeder ederlerin icerisinden  ele ededleri cap etki :
